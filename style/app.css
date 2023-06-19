@@ -1,0 +1,42 @@
+*{ margin: 0; padding: 0; }
+body { font-family: helvetica, arial; font-size: 16px; color:#333; }
+header {
+  height: 100px;
+  background-color: #262626;
+  color: white;
+  padding: 10px 0;
+}
+
+#menu{
+  float: right;
+  padding: 30px 0;
+}
+#menu a{
+  text-decoration: none;
+  padding: 45px 50px;
+  color: #e3e3e3;
+  text-shadow: 1px 1px 1px #111;
+}
+#menu a:hover{
+  background-color:#44b874;
+}
+
+footer {
+  height: 50px; 
+  background-color: #26AA26;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+
+.container {
+  margin: 0 auto; 
+  width: 960px;
+}
+
+#main {
+  /* background-color: #80AA80; */
+  padding: 30px 0;
+}
+
