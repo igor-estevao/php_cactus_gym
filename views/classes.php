@@ -12,7 +12,7 @@
       echo '<td>' . $row['name'] . '</td>';
       echo '<td>' . $row['qtd'] . '</td>';
       echo '<td>';
-      echo "<a href='views/delete_class.php?class_id={$row['id']}'>Delete</a>";
+      echo "<a href='delete_class.php?class_id={$row['id']}'>Delete</a>";
       echo '</td>';
     echo '</tr>';
   }

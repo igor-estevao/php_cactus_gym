@@ -11,8 +11,8 @@
       echo '<td>' . $row['name'] . '</td>';
       echo '<td>' . $row['qtd'] . '</td>';
       echo '<td>';
-      echo "<a href='views/edit_student.php?student_id={$row['id']}'>Edit</a><br>";
-      echo "<a href='views/delete_student.php?student_id={$row['id']}'>Delete</a>";
+      echo "<a href='edit_student.php?student_id={$row['id']}'>Edit</a><br>";
+      echo "<a href='delete_student.php?student_id={$row['id']}'>Delete</a>";
       echo '</td>';
     echo'</tr>';
   }

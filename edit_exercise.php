@@ -1,6 +1,6 @@
 <h1>New exercise</h1>
 <?php 
-  include '../db.php';
+  include 'db.php';
   $exercise = mysqli_fetch_array(mysqli_query($conexao, "SELECT * FROM exercises WHERE `exercises`.`id` = {$_GET['exercise_id']} LIMIT 1"));
 ?>
 <br>

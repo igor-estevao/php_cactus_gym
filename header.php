@@ -12,10 +12,10 @@
     <div class="container">
       <a href="?page_to=home"><img src="img/logo_new.png" title="logo" alt="Logo"></a>
       <div id="menu">
-        <a href="?page_to=home">Home</a>
         <a href="?page_to=exercises">Exercises</a>
         <a href="?page_to=students">Students</a>
         <a href="?page_to=classes">Classes</a>
+        <?php if(isset($_SESSION['login'])){ echo "<a href='logout.php'>Logout</a>"; } ?>
       </div>
     </div>
   </header>

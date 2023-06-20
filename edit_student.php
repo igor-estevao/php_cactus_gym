@@ -1,6 +1,6 @@
 <h1>New Student</h1>
 <?php 
-  include '../db.php';
+  include 'db.php';
   $student = mysqli_fetch_array(mysqli_query($conexao, "SELECT * FROM students WHERE `students`.`id` = {$_GET['student_id']} LIMIT 1"));
 ?>
 <br>

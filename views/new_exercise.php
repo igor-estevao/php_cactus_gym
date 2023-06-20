@@ -1,5 +1,5 @@
 <h1>New Exercise</h1>
-<form method="post" action="views/create_exercise.php">
+<form method="post" action="create_exercise.php">
   <br>
   <label>Exercise_name:</label><br>
   <input type="text" name="exercise_name" placeholder="Exercise name">

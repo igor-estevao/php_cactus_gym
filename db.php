@@ -1,13 +1,13 @@
 <?php
-// mysqli
+// include 'db_initialize.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 mysqli_report(MYSQLI_REPORT_OFF);
-$servidor = "127.0.0.1";
-$usuario = "root";
-$senha = "";
+$server = "127.0.0.1";
+$user = "root";
+$password = "";
 $database = "cactus_gym";
-$conexao = mysqli_connect($servidor, $usuario, $senha, $database);
+$conexao = mysqli_connect($server, $user, $password, $database);
 
 $query = "SELECT * FROM exercises";
 $exercises_q = mysqli_query($conexao, $query);
@@ -31,21 +31,13 @@ LEFT OUTER JOIN (
 ) AS c ON ex.id = c.exercise_id;";
 $classes_q = mysqli_query($conexao, $query);
 
-
-// function get_student_by_id($id){
-//   $query = "SELECT * FROM students WHERE `students`.`id` = {$id} LIMIT 1";
-//   return mysqli_query($conexao, $query);
-// }
-
-
-
 // $query_1 = "CREATE DATABASE cactus_gym;";
 // $query_2 = "CREATE TABLE exercises (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50), time_to_perform INT);";
 // $query_3 = "CREATE TABLE students (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50));";
 // $query_4 = "CREATE TABLE classes (id INT PRIMARY KEY AUTO_INCREMENT,student_id INT,exercise_id INT);";
 
 // mysqli_query($conexao, $query_1);
-// $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
+// $conexao = mysqli_connect($server, $user, $password, $database);
 // mysqli_query($conexao, $query_2);
 // mysqli_query($conexao, $query_3);
 // mysqli_query($conexao, $query_4);

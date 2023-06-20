@@ -11,8 +11,8 @@
       echo '<td>' . $row['name'] . '</td>';
       echo '<td>' . $row['time_to_perform'].'</td>';
       echo '<td>';
-      echo "<a href='views/edit_exercise.php?exercise_id={$row['id']}'>Edit</a><br>";
-      echo "<a href='views/delete_exercise.php?exercise_id={$row['id']}'>Delete</a>";
+      echo "<a href='edit_exercise.php?exercise_id={$row['id']}'>Edit</a><br>";
+      echo "<a href='delete_exercise.php?exercise_id={$row['id']}'>Delete</a>";
       echo '</td>';
     echo'</tr>';
   }

@@ -1,5 +1,5 @@
 <h1>New Class</h1>
-<form method="post" action="views/create_class.php">
+<form method="post" action="create_class.php">
   <select name="student_id">
     <option>Select a Student</option>
     <?php
